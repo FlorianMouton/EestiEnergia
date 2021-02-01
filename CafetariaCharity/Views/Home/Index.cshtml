@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+@{
+    ViewData["Title"] = "Index";
+}
+<html>
+<body>
+    <div class="text-center">
+        <h1 class="display-3">Welcome to the charity event</h1>
+    </div>
+
+
+    <div class="text-center">
+        <h2 class="display-4">Snacks</h2>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <img class="responsive" id="img_brownie" src="~/Images/Brownie.jpg" alt="Brownie" onclick="ImageClick(this.id)" />
+            <p>Brownie - 0.60€</p>
+        </div>
+        <div class="col-sm">
+            <img class="responsive" id="img_muffin" src="~/Images/muffin.jpg" alt="Muffin" onclick="ImageClick(this.id)" />
+            <p>Muffin - 1.00€</p>
+        </div>
+        <div class="col-sm">
+            <img class="responsive" id="img_cakePop" src="~/Images/fudgy_cake_pops.jpg" alt="Cake Pop" onclick="ImageClick(this.id)" />
+            <p>Cake Pop - 1.35€</p>
+        </div>
+        <div class="col-sm">
+            <img class="responsive" id="img_appleTart" src="~/Images/AppleTart.jfif" alt="Apple Tart" onclick="ImageClick(this.id)" />
+            <p>Apple Tart - 1.50€</p>
+        </div>
+        <div class="col-sm">
+            <img class="responsive" id="img_water" src="~/Images/Water.jpeg" alt="Water" onclick="ImageClick(this.id)" />
+            <p>Water - 1.50€</p>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <h2 class="display-4">Clothes & Toys</h2>
+    </div>
+    <div class="row">
+
+        <div class="col-sm">
+            <img class="responsive" id="img_shirt" src="~/Images/shirt.png" alt="Shirt" onclick="ImageClick(this.id)" />
+            <p>Shirt - 2.00€</p>
+        </div>
+        <div class="col-sm">
+            <img class="responsive" id="img_pants" src="~/Images/Pants.png" alt="Pants" onclick="ImageClick(this.id)" />
+            <p>Pants - 3.00€</p>
+        </div>
+        <div class="col-sm">
+            <img class="responsive" id="img_jacket" src="~/Images/Jacket.png" alt="Jacket" onclick="ImageClick(this.id)" />
+            <p>Jacket - 4.00€</p>
+        </div>
+        <div class="col-sm">
+            <img class="responsive" id="img_toy" src="~/Images/toys.png" alt="Toys" onclick="ImageClick(this.id)" />
+            <p>Toy - 1.00€</p>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-sm">
+            <p id="total">Total : 0€ </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <button type="button" id="reset" name="btn_reset" onclick="Reset()">
+                Reset
+            </button>
+            <button type="button" id="checkout" name="btn_checkout" text="Checkout" onclick="Checkout()">
+                Checkout
+            </button>
+        </div>
+
+    </div>
+</body>
+</html>
